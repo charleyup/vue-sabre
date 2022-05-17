@@ -1,0 +1,65 @@
+@import "../../assets/style/common.less";
+@css-prefix: mt;
+
+.@{css-prefix}-radio{
+    display: flex;
+    margin: 0.28rem 0 !important;
+    &-icon{
+        display: inline-block;
+        position: relative;
+        width: @radio-width;
+        height: @radio-height;
+        background: @color-white;
+        border-radius: 50%;
+        border: .01rem solid @radio-color-disabled;
+        text-align: center;
+        > i {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(.1);
+            font-size: @radio-width;
+            color: @color-white;
+        }
+    }
+    &-icon-right{
+        float: right;
+    }
+    &-text {
+        display: block;
+        flex: 1;
+        padding: 0 0.2rem !important;
+        line-height: @radio-height;
+        font-size: @font-size-normal;
+        color: @color-black;
+    }
+    input[type="radio"] {
+        width: @radio-width;
+        height: @radio-height;
+        position: absolute;
+        z-index: 9;
+        opacity: 0;
+        &:checked + .@{css-prefix}-radio-icon {
+            border-color: @radio-color-active;
+            background: @radio-color-active;
+            > i {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0.6);
+                transition: all .1s ease-in-out;
+            }
+        }
+        &:checked{
+            &:disabled + .@{css-prefix}-radio-icon{
+                border-color: @radio-color-disabled;
+                background: @radio-color-disabled;
+            }
+        }
+        &:disabled + .@{css-prefix}-radio-icon{
+            border-color: @radio-color-disabled;
+            background: @radio-color-disabled;
+        }
+    }
+}

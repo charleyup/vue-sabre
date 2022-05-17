@@ -1,0 +1,49 @@
+@import "../../assets/style/common.less";
+.mt-switch {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: .74rem;
+    height: .45rem;
+    left: 0;
+    border: .02rem solid rgba(0,0,0,0.10);
+    border-radius: .23rem;
+    outline: none; 
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: .41rem;
+        border-radius: .2rem;
+        transition: transform .3s;
+        background-color: #FFF;        
+    }
+    &:before {
+        width: .7rem;
+    }
+  
+    &:after {
+        width: .41rem;      
+        box-shadow: 0 .02rem .04rem 0 rgba(0, 0, 0, .5);
+    }
+    &:checked {
+        border-color: @switch-color-active;
+        background-color: @switch-color-active;
+        &:before {
+          transform: scale(0);
+        }
+        &:after {
+          transform: translateX(.31rem);
+        }
+    }
+    &:disabled {
+        border-color: @switch-color-disabled;
+        background-color: @switch-color-disabled;
+        &:before {
+            background-color: @switch-color-disabled;
+        }
+    }
+};

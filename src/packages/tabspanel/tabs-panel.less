@@ -1,0 +1,17 @@
+@import "../../assets/style/common.less";
+@import "../../assets/style/variables.less";
+
+.mt-tabs-panel-item {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform .1s;
+}
+.mt-tabs-panel-item-active {
+    position: relative;
+    transform: translateX(0);
+    ~ .mt-tabs-panel-item {
+        transform: translateX(100%);
+    }
+}

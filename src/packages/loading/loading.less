@@ -1,0 +1,29 @@
+@import "../../assets/style/common.less";
+
+.mt-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+};
+
+.mt-loading .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.64rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: rgba(0,0,0,0.80);
+    border-radius: 10px;
+    color: @color-white;
+    font-size: 0.28rem;
+    opacity: 1;
+    text-align: center;
+}
+
+@import "../../assets/style/animation.less";

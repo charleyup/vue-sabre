@@ -1,0 +1,57 @@
+@import "../../assets/style/common.less";
+.mt-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: @modal-width;
+    background: #f7f7f7;
+    border-radius: @modal-radius;
+    text-align: center;
+    color: @color-black;
+    font-size: .26rem;
+    z-index: 9;
+    & &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: .4rem auto -.1rem;
+        line-height: 1.8rem;
+        overflow: hidden;
+        .iconfont {
+            display: block;
+            font-size: 1.8rem;
+        }
+    }
+    & &__title {
+        padding: .4rem .6rem .08rem;
+        font-size: .36rem;
+        font-weight: bold;
+    }
+    & &__desc {
+        padding: 0 .8rem;
+    }
+    & &__btn {
+        display: flex;
+        width: 100%;
+        margin: .4rem 0 0;
+        color: @color-primary;
+        border-top: .01rem solid @modal-border-color;
+        font-size: .3rem;
+        line-height: .9rem;
+        span {
+            flex: 1;
+        }
+        &.row {
+            span + span {
+                border-left: 0.01rem solid @modal-border-color;
+                font-weight: bold;
+            }
+        }
+        &.column {
+            flex-direction: column;
+            span + span {
+                border-top: 0.01rem solid @modal-border-color;
+            }
+        }
+    }
+};

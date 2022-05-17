@@ -1,0 +1,68 @@
+@import "../../assets/style/common.less";
+
+.mt-button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    font-size: @font-size-normal;
+    background-color: @color-primary;
+    color: @color-white;
+    width: @button-width-normal;
+    height: @button-height-normal;
+    overflow: hidden;
+    &.round {
+        border-radius: @button-border-radius-normal;
+    }
+
+    &.border {
+        border: 0.02rem solid rgba(0, 0, 0, 0.05);
+    }
+
+    // &.plain {
+    //     background-color: @color-white;
+    //     color: @color-primary;
+    //     border: 0.02rem solid @color-primary;
+    // }
+
+    &.tiny {
+        width: @button-width-tiny;
+        height: @button-height-tiny;
+        &.round {
+            border-radius: @button-border-radius-tiny;
+        }
+    }
+    &.low {
+        width: @button-width-low;
+        height: @button-height-low;
+        &.round {
+            border-radius: @button-border-radius-low;
+        }
+    }
+
+    &.secondary {
+        background-color: @color-secondary;
+        color: #333;
+    }
+
+    &.danger {
+        background-color: @color-danger;
+    }
+
+    &.disabled {
+        opacity: 0.5;
+    }
+
+    &.loading,
+    &:active {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0, 0.1);
+        }
+    }
+}

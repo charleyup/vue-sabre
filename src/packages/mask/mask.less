@@ -1,0 +1,17 @@
+@import "../../assets/style/common.less";
+.mt-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(4,4,15,.4);
+    z-index: 8;
+};
+
+.mt-mask-fade-enter, .mt-mask-fade-leave-active {
+    opacity: 0;
+}
+.mt-mask-fade-enter-active, .mt-mask-fade-leave-active {
+    transition: all .3s ease-in-out;
+}

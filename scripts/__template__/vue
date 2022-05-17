@@ -1,0 +1,13 @@
+<template>
+    <div class="mt-{{name}}"></div>
+</template>
+<script>
+export default {
+    name: "mt-{{name}}",
+    props: {},
+    data() {
+        return {};
+    },
+    methods: {}
+};
+</script>

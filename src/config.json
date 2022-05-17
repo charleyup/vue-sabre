@@ -1,0 +1,128 @@
+{
+    "packages": [
+        {
+            "name": "Toast",
+            "chnName": "吐司",
+            "type": "method",
+            "desc": "轻提示",
+            "author": "李长乐"
+        },
+        {
+            "name": "Button",
+            "chnName": "按钮",
+            "type": "component",
+            "desc": "各种颜色、尺寸、状态的按钮",
+            "author": "李长乐"
+        },
+        {
+            "name": "CellGroup",
+            "chnName": "列表组",
+            "type": "component",
+            "desc": "各种类型的列表组，支持自定义内容、单选、多选等",
+            "author": "李长乐"
+        },
+        {
+            "name": "CellItem",
+            "chnName": "列表项",
+            "type": "component",
+            "desc": "各种类型的列表项，支持图标、链接、左右插槽、图片等",
+            "author": "李长乐"
+        },
+        {
+            "name": "ActionSheet",
+            "chnName": "弹出式菜单",
+            "type": "component",
+            "desc": "从底部弹出的模态框，提供和当前场景相关的 2 个以上的操作动作，也支持提供标题和描述。",
+            "author": "PsiloLau"
+        },
+        {
+            "name": "Mask",
+            "chnName": "遮罩层",
+            "type": "component",
+            "desc": "用于各种弹窗时的底层遮罩，防止误触。",
+            "author": "PsiloLau"
+        },
+        {
+            "name": "Loading",
+            "chnName": "等待提示",
+            "type": "method",
+            "desc": "等待提示，可用户页面跳转等待，请求等待等，可自定义文本提示",
+            "author": "licl12"
+        },
+        {
+            "name": "RadioGroup",
+            "chnName": "单选",
+            "type": "component",
+            "desc": "单选项组",
+            "author": "陈秀平"
+        },
+        {
+            "name": "Radio",
+            "chnName": "单选",
+            "type": "component",
+            "desc": "单选项",
+            "author": "陈秀平"
+        },
+        {
+            "name": "Tabs",
+            "chnName": "选项卡",
+            "type": "component",
+            "desc": "选项卡顶部组件",
+            "author": "Syaoran"
+        },
+        {
+            "name": "TabsPanel",
+            "chnName": "选项卡标签页",
+            "type": "component",
+            "desc": "选项卡标签页组件",
+            "author": "Syaoran"
+        },
+        {
+            "name": "TabBar",
+            "chnName": "底部导航栏",
+            "type": "component",
+            "desc": "底部导航栏",
+            "author": "Syaoran"
+        },
+        {
+            "name": "TabBarItem",
+            "chnName": "底部导航栏单项",
+            "type": "component",
+            "desc": "底部导航栏单项",
+            "author": "Syaoran"
+        },{
+            "name": "Picker",
+            "chnName": "选择器",
+            "type": "component",
+            "desc": "滚动选择器",
+            "author": "PsiloLau"
+        },
+        {
+            "name": "Checkbox",
+            "chnName": "多选项单项",
+            "type": "component",
+            "desc": "多选项单项",
+            "author": "cxp"
+        },
+        {
+            "name": "CheckboxGroup",
+            "chnName": "多选项组",
+            "type": "component",
+            "desc": "多选项组",
+            "author": "cxp"
+        },
+        {
+            "name": "Modal",
+            "chnName": "模态框",
+            "type": "component",
+            "desc": "模态框（Modal）是覆盖在父窗体上的子窗体。通常，目的是显示来自一个单独的源的内容，可以在不离开父窗体的情况下有一些互动。子窗体可提供信息、交互等。",
+            "author": "PsiloLau"
+        },{
+            "name": "Switch",
+            "chnName": "开关",
+            "type": "component",
+            "desc": "开关",
+            "author": "cxp"      
+        }
+    ]
+}

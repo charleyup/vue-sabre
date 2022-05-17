@@ -1,0 +1,97 @@
+@import "../../assets/style/common.less";
+.mt-cell-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: @font-size-normal;
+    // height: @cell__height_nomal;
+    min-height: @cell__height_nomal;
+    padding-left: @cell-rowPadding;
+    border-bottom: 0.01rem solid #ddd;
+    & &__content {
+        display: flex;
+        justify-content: center;
+    }
+    &.checkbox &__content_icon {
+        > .iconfont {
+            color: @cell-subtitle__color;
+        }
+    }
+    &.checkbox.active &__content_icon {
+        > .iconfont {
+            color: @color-primary;
+        }
+    }
+    & &__content_icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0.4rem;
+        height: 0.4rem;
+        transform: translateY(-50%);
+        > .iconfont {
+            font-size: 0.4rem;
+            color: @color-primary;
+        }
+        & + .mt-cell-item__content_left {
+            padding-left: 0.7rem;
+        }
+    }
+    & &__content_img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(-50%);
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.14rem;
+        }
+
+        & + .mt-cell-item__content_left {
+            padding-left: 1.3rem;
+        }
+    }
+    & &__content_left {
+        flex-direction: column;
+        color: @cell-color-left;
+        text-align: left;
+    }
+    & &__content_right {
+        align-items: center;
+        flex-direction: row;
+        color: @cell-color-right;
+        text-align: right;
+        padding-right: @cell-rowPadding;
+
+        .iconfont {
+            margin-left: 0.2rem;
+            &.active {
+                color: @color-primary;
+            }
+        }
+
+        > img {
+            width: 0.58rem;
+            height: 0.58rem;
+            object-fit: cover;
+        }
+    }
+    &.large {
+        // height: @cell__height_large;
+        min-height: @cell__height_large;
+        .content__subtitle {
+            margin-top: 0.1rem;
+            font-size: 0.26rem;
+            color: @cell-subtitle__color;
+        }
+    }
+};
+
+.mt-cell-group .mt-cell-group__content .mt-cell-item {
+    padding-left: 0;
+}

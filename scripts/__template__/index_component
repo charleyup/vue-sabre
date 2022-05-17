@@ -1,0 +1,6 @@
+import {{name}} from "./{{nameLc}}.vue";
+import "./{{nameLc}}.less";
+{{name}}.install = function(Vue) {
+    Vue.component({{name}}.name, {{name}});
+};
+export default {{name}};

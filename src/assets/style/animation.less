@@ -1,0 +1,14 @@
+.mtFade-enter-active, .mtFade-leave-active {
+    transition: opacity .3s
+}
+.mtFade-enter, .mtFade-leave-to /* .mtFade-leave-active in below version 2.1.8 */ {
+    opacity: 0
+}
+
+// from the bottom up
+.mtMove-enter-active, .mtMove-leave-active {
+    transition: all .3s ease-in-out
+}
+.mtMove-enter, .mtMove-leave-to {
+    transform: translate3d(0, 100%, 0)
+}

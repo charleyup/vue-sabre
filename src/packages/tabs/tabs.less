@@ -1,0 +1,46 @@
+@import "../../assets/style/common.less";
+@import "../../assets/style/variables.less";
+
+.mt-tabs {
+    font-size: @font-size-26;
+    color: @color-text-normal;
+    &-box {
+        .mt-tabs-nav {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            .mt-tabs-item {
+                min-width: 23%;
+                flex-grow: 1;
+                text-align: center;
+                border-bottom: @tabs-border-bottom;
+                > a {
+                    color: inherit;
+                    display: block;
+                    padding: .215rem 0;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+
+            .mt-tabs-active {
+                color: @tabs-color-active;
+            }
+        }
+
+        .mt-tabs-line {
+            position: absolute;
+            width: .4rem;
+            height: 3px; /*!no*/
+            z-index: 4;
+            background-color: @tabs-color-active;
+            transform: translateY(-100%) translateX(-50%);
+            transition: left 0.3s;
+        }
+    }
+
+    &-panel {
+        position: relative;
+        overflow: hidden;
+    }
+}

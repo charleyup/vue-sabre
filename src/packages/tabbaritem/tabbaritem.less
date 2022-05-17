@@ -1,0 +1,20 @@
+@import "../../assets/style/common.less";
+@import "../../assets/style/variables.less";
+
+.mt-tabbar-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    font-size: @font-size-normal;
+    padding: .16rem .02rem .1rem .02rem;
+
+    &-active {
+        color: @tabbar-color-active;
+    }
+
+    .mt-tabbar-icon {
+        padding-bottom: .1rem;
+    }
+}

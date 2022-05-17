@@ -1,0 +1,20 @@
+@import "../../assets/style/common.less";
+@import "../../assets/style/variables.less";
+
+.mt-tabbar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: @tabbar-color;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: @tabbar-border;
+
+    &-fixed {
+        position: fixed;
+    }
+}
